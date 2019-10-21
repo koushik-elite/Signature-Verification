@@ -164,11 +164,11 @@ UI and Backend code with pretrained model is available in
 
 ```
 
-Download the pretrained deep learning model from the google drive. since github is limited to 100mb
+Download the pretrained deep learning model from the google drive. since github is limited to 100mb only
+
 Download [Model.zip](https://drive.google.com/drive/folders/1lnBTFY5MdfzPlvL3qcg4d7APILLvuOB3?usp=sharing)
 
 Extract the model to 
-
 <root>/application/model (Deep learning models)
 
 API is in python and UI is in angular 6 so both the servers need to be started saperately.
@@ -245,7 +245,14 @@ run the [prepare.py](/prepare.py) python code for data preparation
 
 A CSV file "train_final.csv" will be created in "sample_Signature" folder 
 
-Run the jupyter notepad [Signature Training.ipynb](/Signature Training.ipynb) for training.
+Run the jupyter notebook [Signature Training.ipynb](/Signature Training.ipynb) for training.
+
+## Training Kaggle
+
+model_v4 in the <root>/application/model is trained in kaggle with large signature dataset to get more accurate model 
+
+Use the notebook [Signature Training kaggle.ipynb](/Signature Training kaggle.ipynb) upload it to kaggle and use this dataset [signature-verification-dataset](https://www.kaggle.com/robinreni/signature-verification-dataset) for training download the model and use it for production 
+
 
 # Reference
 
