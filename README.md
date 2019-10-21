@@ -29,6 +29,13 @@ Demo Video [Youtube](https://www.youtube.com/watch?v=LbRdAB0GGMo&list=PL3g74LgzV
 
 ![flow_1](assets/flow.png?raw=true "flow_1")
 
+Clone the repository, and navigate to the downloaded folder. This may take a minute or two to clone due to the included image data.
+
+```
+git clone https://github.com/koushik-elite/Signature-Verification.git
+cd Signature-Verification
+```
+
 UI and Backend code with pretrained model is available in
 
 <root>/application
