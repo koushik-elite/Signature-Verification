@@ -1,0 +1,17 @@
+.media-object {
+    max-width: 100px;
+    height: auto;
+}
+.btn {
+    margin: 0 2px;
+}
+.success_responce {
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+}
+/deep/ .empty.ng-pristine.ng-invalid.ng-touched {
+    border-color: red;
+}

@@ -1,0 +1,11 @@
+/deep/ .mat-tab-label-content {
+    color: #000;
+}
+
+>>> .mat-tab-label-content {
+    color: #000;
+}
+.container {
+    padding: 0;
+    margin: 20px;
+}

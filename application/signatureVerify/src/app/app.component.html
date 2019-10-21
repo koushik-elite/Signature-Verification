@@ -1,0 +1,29 @@
+<mat-tab-group>
+  <mat-tab label="Add Signature">
+    <ng-template matTabContent>
+      <div class="container">
+        <p>
+          <b>Step 1:</b> Accept & Store Genuine Signature Image: Take actual signature scanned image of the onboarding
+          customer and store it in a database against a unique Customer ID<br/>
+          <b style="color: red;">*</b> Required Field are to filled
+        </p>
+        <app-add-signature></app-add-signature>
+      </div>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Compare Signature">
+    <ng-template matTabContent>
+      <div class="container">
+        <p>
+          <b>Step 2:</b> Accept & Compare Signature Images: Accept inputs of Customer ID and corresponding signature
+          image.
+          Compare with the signature stored in DB against the given Customer ID, and return a Confidence Match Score
+          between
+          the two signature images.<br/>
+          <b style="color: red;">*</b> Required Field are to filled
+        </p>
+        <app-compare-signature></app-compare-signature>
+      </div>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
