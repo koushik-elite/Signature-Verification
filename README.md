@@ -21,6 +21,8 @@ Step 1: Accept & Store Genuine Signature Image: Take actual signature scanned im
 
 Step 2: Accept & Compare Signature Images: Accept inputs of Customer ID and corresponding signature image. Compare with the signature stored in DB against the given Customer ID, and return a Confidence Match Score between the two signature images.
 
+Demo Video [Youtube](https://www.youtube.com/watch?v=LbRdAB0GGMo&list=PL3g74LgzV32_PxmUmbLwtkRzPEmQ_vPS-)
+
 ## Architecture
 
 ![flow_1](assets/flow.png?raw=true "flow_1")
@@ -29,12 +31,135 @@ UI and Backend code with pretrained model is available in
 
 <root>/application
 
-<root>/application/signatureVerify (Angular 6 Code)
+<root>/application/model (Deep learning models)
 
 <root>/application/server (Python Flask Code)
 
-<root>/application/model (Deep learning models)
+<root>/application/signatureVerify (Angular 6 Code)
 
+
+## Directory Structure
+.
+├── application
+│   ├── model
+│   │   ├── model.pt
+│   │   └── model_v4.pt
+│   ├── server
+│   │   ├── data
+│   │   │   ├── data (copy).csv
+│   │   │   ├── data.csv
+│   │   │   └── uploads
+│   │   │       ├── compare
+│   │   │       └── original
+│   │   ├── dataset.py
+│   │   ├── model.py
+│   │   ├── persist.py
+│   │   ├── __pycache__
+│   │   │   ├── dataset.cpython-36.pyc
+│   │   │   ├── model.cpython-36.pyc
+│   │   │   └── persist.cpython-36.pyc
+│   │   └── server.py
+│   └── signatureVerify
+│       ├── angular.json
+│       ├── browserslist
+│       ├── e2e
+│       │   ├── protractor.conf.js
+│       │   ├── src
+│       │   │   ├── app.e2e-spec.ts
+│       │   │   └── app.po.ts
+│       │   └── tsconfig.json
+│       ├── karma.conf.js
+│       ├── package.json
+│       ├── package-lock.json
+│       ├── README.md
+│       ├── src
+│       │   ├── app
+│       │   │   ├── add-signature
+│       │   │   │   ├── add-signature.component.css
+│       │   │   │   ├── add-signature.component.html
+│       │   │   │   ├── add-signature.component.spec.ts
+│       │   │   │   ├── add-signature.component.ts
+│       │   │   │   └── image-preview.directive.ts
+│       │   │   ├── app.component.css
+│       │   │   ├── app.component.html
+│       │   │   ├── app.component.spec.ts
+│       │   │   ├── app.component.ts
+│       │   │   ├── app.module.ts
+│       │   │   ├── app-routing.module.ts
+│       │   │   ├── compare-signature
+│       │   │   │   ├── compare-signature.component.css
+│       │   │   │   ├── compare-signature.component.html
+│       │   │   │   └── compare-signature.component.ts
+│       │   │   └── services
+│       │   │       └── application.service.ts
+│       │   ├── assets
+│       │   ├── environments
+│       │   │   ├── environment.prod.ts
+│       │   │   └── environment.ts
+│       │   ├── favicon.ico
+│       │   ├── index.html
+│       │   ├── main.ts
+│       │   ├── polyfills.ts
+│       │   ├── styles.css
+│       │   └── test.ts
+│       ├── tsconfig.app.json
+│       ├── tsconfig.json
+│       ├── tsconfig.spec.json
+│       └── tslint.json
+├── assets
+│   ├── flow.png
+│   ├── loss.jpg
+│   └── network-architecture.jpg
+├── dataset.py
+├── installation
+│   └── README.md
+├── LICENSE
+├── loss.py
+├── model
+├── model.py
+├── prepare.py
+├── README.md
+├── requirements.txt
+├── sample_Signature
+│   ├── forged
+│   │   └── NFI-08805004.png
+│   ├── genuine
+│   │   ├── NFI-00101001.png
+│   ├── README.txt.txt
+│   └── train_final.csv
+├── Signature Training.ipynb
+├── Signature Training kaggle.ipynb
+└── testfiles
+    ├── 049
+    │   ├── 01_049.png
+    │   ├── 02_049.png
+    │   ├── 03_049.png
+    │   ├── 04_049.png
+    │   ├── 05_049.png
+    │   ├── 06_049.png
+    │   ├── 07_049.png
+    │   ├── 08_049.png
+    │   ├── 09_049.png
+    │   ├── 10_049.png
+    │   ├── 11_049.png
+    │   └── 12_049.png
+    ├── 049_forg
+    │   ├── 01_0114049.PNG
+    │   ├── 01_0206049.PNG
+    │   ├── 01_0210049.PNG
+    │   ├── 02_0114049.PNG
+    │   ├── 02_0206049.PNG
+    │   ├── 02_0210049.PNG
+    │   ├── 03_0114049.PNG
+    │   ├── 03_0206049.PNG
+    │   ├── 03_0210049.PNG
+    │   ├── 04_0114049.PNG
+    │   ├── 04_0206049.PNG
+    │   └── 04_0210049.PNG
+    ├── forg
+    │   └── NFI-00301001.png
+    └── gen
+        └── NFI-00101001.png
 
 Download the pretrained deep learning model from the google drive. since github is limited to 100mb
 Download [Model.zip](https://drive.google.com/drive/folders/1lnBTFY5MdfzPlvL3qcg4d7APILLvuOB3?usp=sharing)
