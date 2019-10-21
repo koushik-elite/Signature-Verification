@@ -39,6 +39,7 @@ UI and Backend code with pretrained model is available in
 
 
 ## Directory Structure
+```bash
 .
 ├── application
 │   ├── model
@@ -160,6 +161,8 @@ UI and Backend code with pretrained model is available in
     │   └── NFI-00301001.png
     └── gen
         └── NFI-00101001.png
+
+```
 
 Download the pretrained deep learning model from the google drive. since github is limited to 100mb
 Download [Model.zip](https://drive.google.com/drive/folders/1lnBTFY5MdfzPlvL3qcg4d7APILLvuOB3?usp=sharing)
