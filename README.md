@@ -28,14 +28,19 @@ Step 2: Accept & Compare Signature Images: Accept inputs of Customer ID and corr
 UI and Backend code with pretrained model is available in
 
 <root>/application
+
 <root>/application/signatureVerify (Angular 6 Code)
+
 <root>/application/server (Python Flask Code)
+
 <root>/application/model (Deep learning models)
+
 
 Download the pretrained deep learning model from the google drive. since github is limited to 100mb
 Download [Model.zip](https://drive.google.com/drive/folders/1lnBTFY5MdfzPlvL3qcg4d7APILLvuOB3?usp=sharing)
 
 Extract the model to 
+
 <root>/application/model (Deep learning models)
 
 API is in python and UI is in angular 6 so both the servers need to be started saperately.
@@ -99,9 +104,13 @@ download and extract the "sample_Signature" folder in the same notebook folder
 Folder Path
 
 <Root>/sample_Signature
+
 <Root>/sample_Signature/forged
+
 <Root>/sample_Signature/genuine
+
 <Root>/Signature Training.ipynb
+
 <Root>/prepare.py
 
 run the [prepare.py](/prepare.py) python code for data preparation
@@ -113,9 +122,14 @@ Run the jupyter notepad [Signature Training.ipynb](/Signature Training.ipynb) fo
 # Reference
 
 [One Shot Learning with Siamese Networks in PyTorch hackernoon](https://hackernoon.com/one-shot-learning-with-siamese-networks-in-pytorch-8ddaab10340e)
+
 [Siamese Neural Networks for One-shot Image Recognition PDF](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf)
+
 [Siamese Networks for Visual Tracking medium](https://medium.com/intel-student-ambassadors/siamese-networks-for-visual-tracking-96262eaaba77)
+
 [Deploy your PyTorch model to Production medium](https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217)
+
+
 
 
 
