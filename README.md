@@ -21,7 +21,7 @@ Step 1: Accept & Store Genuine Signature Image: Take actual signature scanned im
 
 Step 2: Accept & Compare Signature Images: Accept inputs of Customer ID and corresponding signature image. Compare with the signature stored in DB against the given Customer ID, and return a Confidence Match Score between the two signature images.
 
-![screenshot](assets/screenshot.jpg?raw=true "screenshot")
+![screenshot](assets/screenshot_1.jpg?raw=true "screenshot")
 
 Demo Video [Youtube](https://www.youtube.com/watch?v=LbRdAB0GGMo&list=PL3g74LgzV32_PxmUmbLwtkRzPEmQ_vPS-)
 
