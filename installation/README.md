@@ -38,13 +38,7 @@ conda install git
 
 **Now, you can create a local version of the project**
 
-1. Clone the repository, and navigate to the downloaded folder. This may take a minute or two to clone due to the included image data.
-```
-git clone https://github.com/koushik-elite/Face-Generation.git
-cd TV-Script-Generation
-```
-
-2. Install PyTorch and torchvision; this should install the latest version of PyTorch.
+1. Install PyTorch and torchvision; this should install the latest version of PyTorch.
 	
 	- __Linux__ or __Mac__: 
 	```
@@ -56,7 +50,7 @@ cd TV-Script-Generation
 	pip install torchvision
 	```
 
-3. Install a few required pip packages, which are specified in the requirements text file (including OpenCV).
+2. Install a few required pip packages, which are specified in the requirements text file (including OpenCV).
 ```
 pip install -r requirements.txt
 ```
